@@ -4,9 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Healthy Life Medical Centre- Patient Registration Form</title>
+
  <link rel="stylesheet" href="style.css">
+
 </head>
-<body>
+ <body>    
+    
+
+       <div class="container">
+<div class="logo">
+    <img src="logo.png" alt="Hospital logo" width="100">
+</div>
+<form action="#" method="post">
+
+<h1>Heathly Life Medical Centre- Patient Registration Form</h1>
+
+<label for="Fullname">Patient Full Name</label>
+<input type="text" id="fullname" name="fullname" required>
+
+<!--email-->
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email" required>
+
+<!--password-->
+<label for="password">Password</label>
+<input type="password" id="password" name="password" required>
+
+<!--date of birth-->
+<label for="dob">Date of birth</label>
+<input type="date" id="dob" name="dob" required>
+
+<!--Gender-->
+ <label>Gender:</label>
+<div class="radio-group">
+ <input type="radio" id="male" name="gender" value="Male">
+<label for="male">Male</label>
+ <input type="radio" id="female" name="gender" value="Female">
+ <label for="female">Female</label>
+<input type="radio" id="other" name="gender" value="Other">
+<label for="other">Other</label>
+</div>
+
+<!--Checkbox-->
+ <div class="checkbox-group">
+<input type="checkbox" id="diabetes" name="condition" value="Diabetes">
+<label for="diabetes">Diabetes</label><br>
+<input type="checkbox" id="hypertension" name="condition" value="Hypertension">
+<label for="hypertension">Hypertension</label><br>
+<input type="checkbox" id="asthma" name="condition" value="Asthma">
+<label for="asthma">Asthma</label><br>
+<input type="checkbox" id="none" name="condition" value="None">
+<label for="none">None</label>
+</div>
+
+
+<!-- Department -->
+<label for="department">Department:</label>
+<select id="department" name="department">
+<option value="">--Select Department--</option>
+<option>General Medicine</option>
+<option>Pediatrics</option>
+<option>Dentistry</option>
+<option>Laboratory</option>
+</select>
+
+
+<!-- Comments -->
+<label for="comments">Comments:</label>
+<textarea id="comments" name="comments" rows="5"></textarea>
+<!-- Buttons -->
+<div class="buttons">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</div>
+</form>
+
+    </div>
 
 </body>
 </html>
